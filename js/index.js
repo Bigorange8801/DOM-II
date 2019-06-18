@@ -38,4 +38,6 @@ btnAct[1].addEventListener('mouseout', (e3) => {
 btnAct[2].addEventListener('mouseout', (e3) => {
     e3.target.innerHTML ="Sign Me Up!";
 })
-const head4 = document.querySelectorAll('.destination')
+
+
+TweenMax.from("body",0.5, {opacity:0, scale:0, ease:AudioBufferSourceNode.easeIn});
