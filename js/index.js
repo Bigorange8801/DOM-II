@@ -23,7 +23,7 @@ btnAct[0].addEventListener('mouseover', (e3) => {
     e3.target.innerHTML = "Bring Lotion!";
 })
 btnAct[1].addEventListener('mouseover', function(e3){
-    e3.target.innerHTML = "Get Boots!";
+    e3.target.innerHTML = "Get to Stepping!";
 })
 btnAct[2].addEventListener('mouseover', function(e3){
     e3.target.innerHTML = "I'm On A Boat!";
@@ -38,6 +38,15 @@ btnAct[1].addEventListener('mouseout', (e3) => {
 btnAct[2].addEventListener('mouseout', (e3) => {
     e3.target.innerHTML ="Sign Me Up!";
 })
+ 
+const imgFun = document.getElementsByTagName("img")
+imgFun[0].addEventListener("mouseover", (e)=>{
+    e.target.style.width="50rem";
+});
+imgFun[0].addEventListener("mouseout",(e)=>{
+    e.target.style.width="";
+});
 
+//July 9 2019 updates
 
-TweenMax.from("body",0.5, {opacity:0, scale:0, ease:AudioBufferSourceNode.easeIn});
+TweenMax.to("body", 2, {x:200, rotation:360});
