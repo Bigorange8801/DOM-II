@@ -47,6 +47,16 @@ imgFun[0].addEventListener("mouseout",(e)=>{
     e.target.style.width="";
 });
 
+const preventA = document.querySelectorAll('a');
+
+preventA.forEach(function(a){
+    a.addEventListener('click', function(event){
+        event.preventDefault();
+        event.stopPropagation();
+    });
+});
+
+
 //July 9 2019 updates
 
 TweenMax.to("body", 2, {x:200, rotation:360});
